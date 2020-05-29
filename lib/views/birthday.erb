@@ -1,0 +1,30 @@
+<div>
+  <style>
+    div {
+      background-color: powderblue;
+      font-family: Helvetica;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    p {
+      font-size: 20px; 
+      width: 100%;
+      text-align: center;
+      margin: 20% 0 20% 0;
+      position: absolute;
+    }
+    </style>
+
+    <% if @birthday_today %>
+    <p>Happy Birthday <%=@name%>!</p>
+    <%end%>
+
+    <% if !@birthday_today %>
+    <p>Your Birthday will be in <%=@countdown%> days, <%=@name%>!</p>
+    <% end %>
+
+  </div>
